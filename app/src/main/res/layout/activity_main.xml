@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_skin_cancer">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Skin cancer is the most prevalent form of cancer in the world, and early diagnosis is the key to reducing risk. The primary method of diagnosis is a skin biopsy which is invasive, expensive, and requires in-person diagnosis. This tool serves as an early skin cancer detection mechanism to save time and money. To use this tool, simply photograph a mole on your skin, and receive a detection message. Disclaimer: Diagnosis is not 100% accurate, a professional clinical opinion is always the best choice. Please zoom in to cover entire skin when taking picture."
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+        />
+
+        <Button
+            android:id="@+id/button_skin_cancer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Detect Skin Cancer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/linear_layout_information"
+        android:layout_below="@+id/linear_layout_skin_cancer">
+    <Button
+        android:id="@+id/button_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="Learn About Skin Cancer" />
+    </LinearLayout>
+
+</LinearLayout>
